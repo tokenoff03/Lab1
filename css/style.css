@@ -31,14 +31,29 @@ a {
     text-decoration: none;
 }
 
-.focus {
-    color: #E3B873 !important;
+.focus:hover {
+    color: #E3B873;
     border-bottom: 1px solid #E3B873;
     padding-bottom: 5px;
 }
-
-section {
-    max-width: 1440px
+.checkbox{
+    display: none;
+}
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+.checkbox:checked + .fake::before{
+    opacity: 1;
 }
 
 button {
@@ -60,7 +75,6 @@ button {
 .header {
     display: flex;
     background-color: #131313;
-    max-width: 1440px;
     height: 83px;
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
@@ -137,7 +151,7 @@ nav > ul li a{
     color:  #FFFFFF;
 }
 
-.header .container > span, .header nav>ul li:first-child a{
+.header .container > span:first-of-type, .header nav>ul li a:hover{
     color: #E3B873
 }
 
@@ -147,15 +161,16 @@ nav > ul li a{
 .number a {
     position: relative;
     left: 30px;
+    color:#FFFFFF;
 }
 .wrapper {
     height: 707px;
-    max-width: 1440px;
     background: rgba(0, 0, 0, 0.7);
 }
 .section1st {
     height: 707px;
-    background: url(../img/background1.png);
+    background: url(../img/background1.png) no-repeat;
+    background-size: cover;
 }
 
 .section1st .container {
@@ -592,7 +607,8 @@ nav > ul li a{
 
 .section5th {
     height: 864px;
-    background: url(../img/bacground2.png);
+    background: url(../img/bacground2.png) no-repeat;
+    background-size: cover;
     
 }
 .section5th .wrapper {
@@ -612,14 +628,17 @@ nav > ul li a{
     flex-direction: column;
     margin-top: 20px;
 }
-.section5th .kinds p:first-child {
+.section5th .kinds a:hover {
     width: 151px;
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
 }
 
-.section5th .kinds p {
+.section5th .kinds a {
     color: #FFFFFF;
+}
+
+.section5th .kinds p {
     line-height: 38px;
     font-size: 20px;
     margin-top: 12px;
@@ -818,7 +837,8 @@ nav > ul li a{
     bottom: 22.8px;
 }
 .section7th {
-    background: url(../img/backround4.png);
+    background: url(../img/backround4.png) no-repeat;
+    background-size: cover;
     height: 953px;
 }
 
