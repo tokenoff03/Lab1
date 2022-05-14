@@ -11,6 +11,7 @@ p {
     font-size: 14px;
     line-height: 27px;
 }
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
@@ -56,11 +57,15 @@ a {
     opacity: 1;
 }
 
+.mobile_subtitle2 {
+    display: none;
+}
+
 button {
     cursor: pointer;
-    font-weight: 400, normal;
+    font-weight: 400;
     font-style: italic;
-    size: 11px;
+    font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -83,9 +88,10 @@ button {
     line-height: 15px;
     font-size: 11px;
 }
+
 .container {
     display: flex;
-    width: 1256px;
+    max-width: 1256px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -111,7 +117,7 @@ button {
     color: #181818;
 }
 
- .subtitlecontainer >div {
+.subtitlecontainer >div {
     margin-top: 5px;
     display: flex;
     height: 40px;
@@ -127,6 +133,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 1256px;
 }
 
 .header_button {
@@ -176,7 +183,6 @@ nav > ul li a{
 .section1st .container {
     padding-top: 194px;
     display: block;
-    padding-left: 96px;
 }
 
 .section1st .container p {
@@ -229,6 +235,7 @@ nav > ul li a{
 }
 
 .main {
+    position: relative;
     display: flex;
     margin-top: 60px;
 }
@@ -245,10 +252,17 @@ nav > ul li a{
     width: 442px;
 }
 .block2 {
-    margin-left: 95px;
-    width: 679px;
-    height: 482px;
-    
+    position: absolute;
+    left: 540px;
+    bottom: 40px;
+}
+
+.mobile_img2-1 {
+    display: none;
+}
+
+.block2>img, .mobile_img2-1>img {
+    width: 100%;
 }
 
 .rectangle {
@@ -270,6 +284,10 @@ nav > ul li a{
     align-items: center;
 }
 
+.mobile_background2_wrapper{
+    display: none;
+}
+
 .section3rd {
     height: 1200px;
     justify-content: center;
@@ -279,11 +297,15 @@ nav > ul li a{
 }
 .img3  {
     position: absolute;
-    left: 310px;
     margin-top: -200px;
     height: 415px;
     width: 817px;
-    background: url(../img/img3.png);
+    background: url(../img/img3.png) no-repeat;
+    background-size: cover;
+}
+
+.container_img3 {
+    position: relative;
 }
 
 .img3 > .wrapper {
@@ -432,7 +454,7 @@ nav > ul li a{
 .repair_wrapper {
     position: relative;
     display: flex;
-    Width: 1236px;
+    max-width: 1236px;
     justify-content: space-between;
     margin-top: 35px;
 }
@@ -852,7 +874,6 @@ nav > ul li a{
     position: absolute;
     width: 885px;
     height: 446px;
-    margin-top: 0.1px;
     bottom: 732px;
 }
 
@@ -917,5 +938,462 @@ nav > ul li a{
 }
 
 .map {
-    margin-top: 40px;
+    position: absolute;
+    top: 428px;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .repair_wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 132.83%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .section1st .container p {
+        font-size: 14px;
+        line-height: 135.84%;
+    }
+    
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -0.07em;
+    }
+
+    .buttonline {
+        display: flex;
+        flex-direction: column;
+        margin-top: 26px;
+        gap: 20px;
+    }
+
+    .buttonline button {
+        width: 100%;
+    }
+
+    .section1st {
+        height: 476px;
+    }
+
+    .wrapper {
+        height: 476px;
+    }
+
+    button {
+        width: 100%;
+    }
+    
+    .container {
+        width: 90%;
+    }
+    
+    .header_container {
+        padding-left: 18px;
+    }
+
+    header .header_container {
+        justify-content: normal;
+    }
+
+    .header_container .number {
+        margin-left: 60%;
+    }
+
+    .repair_wrapper {
+        max-width: 970px;
+    }
+
+    .repair_content img {
+        width: 310px;
+        height: 420px;
+    }
+    
+    .repair_info {
+        left: 0;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .section6th {
+        display: none;
+    }
+
+    .section5th {
+        display: none;
+    } 
+
+    .img6 {
+        display: none;
+    }
+
+    .img7 {
+        display: none;
+    }
+
+    .img8 {
+        display: none;
+    }
+
+    .piggy {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .section2nd nav {
+        display: none;
+    }
+
+    .guide {
+        display: none;
+    }
+
+    .block2 {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 242px;
+        bottom: 0;
+    }
+
+    .section3rd {
+        background: #131313;
+    }
+
+    .img2 {
+        display: none;
+    }
+
+    .main {
+        margin-top: 0;
+    }
+
+    .section2nd > .container {
+        padding-top: 0;
+        height: 650px;
+        padding-top: 36px;
+    }
+
+    .undertitletext {
+        width: 95%;
+    }
+
+    .h2 {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+
+    .rectangle p {
+        margin-top: 11px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    p {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    
+    h1 {
+        font-size: 23px;
+        line-height: 132.83%;
+    }
+    
+    .section1st .container {
+        padding-top: 85px;
+        display: block;
+    }
+
+    .header_container .number {
+        margin-left: 0;
+    }
+
+    .repair_content img {
+        width: 100%;
+        height: 420px;
+    }
+    .repair_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 35px;
+        gap: none;
+    }
+
+    .repair_info {
+        position: relative;
+        left: 0;
+        bottom: 132px;
+        width: 80%;
+        height: 248px;
+        background: #FFFFFF;
+        box-shadow: 10px 10px 20px rgb(0 0 0 / 3%);
+    }
+    
+    .img3 {
+        position: absolute;
+        margin-top: -200px;
+        height: 207px;
+        width: 100%;
+        background: url(../img/img3.png) no-repeat;
+        background-size: cover;
+        
+    }
+
+    .section3rd > .container {
+        width: 90%;
+    }
+    .section3rd {
+        height: 899px;
+    }
+
+    .mobile_subtitle {
+        margin-top: 70px;
+    }
+
+    .img3 > .wrapper {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .section3rd .circle {
+        width: 37px;
+        height: 37px;
+    }
+
+    .section3rd .circle img {
+        width: 12.2px;
+        height: 12.2px;
+    }
+
+    .undervideo {
+        margin-top: 15px;
+    }
+
+    .form_undervideo ul input::placeholder, .form_block ul {
+        color: #FFFFFF;
+    }
+
+    .form_undervideo .form_input {
+        width: 100%;
+        background: #131313;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .form_label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .main .block1>p {
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .text > p{
+        width: 100%;
+        font-size: 11px;
+        line-height: 169.8%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .form {
+        position: relative;
+    }
+
+    .form_ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .form_ul li:last-child {
+        position: absolute;
+        width: 100%;
+        top: 260px;
+    }
+
+    .form_cont .box {
+        margin-top: 28px;
+        color: #FFFFFF;
+    }
+
+    .h3 {
+        font-size: 15px;
+        line-height: 138.6%;
+    }
+
+    .repair_content ul {
+        margin-top: 10px;
+    }
+
+    .repair_content ul li {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 169.8%;
+    }
+
+    .repair_info .subtitle {
+        padding-top: 20px;
+    }
+
+    .repair_content button {
+        top: 18px;
+        width: 191px;
+    }
+    .section7th {
+        background: #131313;
+        height: 100%;
+        padding-top: 70px;
+    }
+
+    .section7th .wrapper {
+        position: relative;
+        height: 953px;
+        background: none;
+    }
+
+    .section7th .count_block {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        bottom: 0;
+    }
+
+    .section7th .ul_box {
+        width: 100%;
+    }
+
+    .form_block .ul_form {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .ul_form li:last-child {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .boxcheck {
+        margin-top: 20px;
+        color: #FFFFFF;
+        gap: 10px;
+    }
+
+    .section7th button {
+        margin-top: 70px;
+    }
+
+    .subcont .repair_wrapper:last-child {
+        display: none;
+    }
+
+    .section4rd {
+        background: none;
+    }
+
+    .section4rd {
+        height: 100%;
+    }
+    .map {
+        position: relative;
+        top: 0;
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .contacts {
+        margin-top: 20px;
+        gap: 27px;
+    }
+
+    .form_block .ul_form li {
+        width: 100%;
+    }
+
+    .section7_subtitle {
+        font-size: 18px;
+        line-height: 138.6%;
+        font-weight: 400;
+    }
+
+    .circle_cont {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 235px;
+    }
+
+    .mobile_background2_wrapper{
+        display: block;
+        position: relative;
+    }
+
+    .mobile_background2 {
+        position: absolute !important;
+        bottom: -100px;
+    }
+    
+    .mobile_img2-1 {
+        position: relative;
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .mobile_img2-1 .circle {
+        width: 36px;
+        height: 36px;
+    }
+    .mobile_img2-1 .circle img:first-child {
+        position: relative;
+        right: 1px;
+    }
+    
+    .mobile_img2-1 .circle .vectorbl {
+        position: relative;
+        left: 1px;
+    }
+
+    .img2-1 {
+        display: block;
+    }
+
+    .mobile_subtitle2 {
+        margin-top: 55px;
+        position: relative;
+        bottom: 100px;
+        margin-bottom: 35px;
+        display: block;
+        color: #E3B873;
+        font-size: 22px;
+        line-height: 138.6%;
+    }
 }
