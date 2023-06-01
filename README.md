@@ -12,4 +12,4 @@
 
 - Semantic layout.
 
-👉🏻 [Demo]([https://yaninatrekhleb.github.io/restaurant-website/](https://tokenoff03.github.io/SkillFactory_TurkeyWebSite/))
+👉🏻 [Demo](https://tokenoff03.github.io/SkillFactory_TurkeyWebSite/)
